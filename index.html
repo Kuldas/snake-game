@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hladová hadice</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body data-theme="coffe">
+    <main class="grid place-items-center max-w-lg mx-auto">
+        <section class="w-full">
+            <article class="text-center">
+                <h1 class="mb-2 font-bold uppercase text-xl">Hladová hadice 🐍</h1>
+                <p class="mb-8">Nakrm hladovou hadici jídlem! <br> <span class="text-xs">(a ne sebou 😂)</span> </p>
+                <canvas id="gameWindow" class="mb-2" width="400" height="400"></canvas>
+                <p id="gameOver" class="hidden text-red-600"><span class="font-bold text-xl uppercase">☠ Konec hry ☠</span><br>sežral si sám sebe!</p>
+                <p id="gameWinner" class="hidden text-green-600"><span class="font-bold text-xl uppercase">🐍 Výhra 🐍</span><br>hadice je přežraná!</p>
+                <p class="text-xl">Tvoje skóre: <span id="playerScore" class="font-bold">0</span></p>
+                <hr class="my-2 border-t-2 border-black">
+                <p>Verze: <span id="gameVersion" class="font-bold"></span></p>
+                <p class="text-xs">historie verzí</p>
+            </article>
+        </section>
+    <!-- <input type="checkbox" id="welcomeBox" class="modal-toggle" checked/> -->
+        <div class="modal" role="dialog">
+            <div class="modal-box">
+                <h3 class="font-bold text-lg">Hello!</h3>
+                <p class="py-4">This modal works with a hidden checkbox!</p>
+                <div class="modal-action">
+                    <label for="welcomeBox" class="btn">Close!</label>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+</html>
